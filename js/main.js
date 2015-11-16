@@ -7,7 +7,7 @@ function initMap() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(initNavigation);
   } else {
-    alert("Sorry, doesn't work")
+    $('#directions').html("Sorry, doesn't work");
   }
 }
 function initNavigation(position) {
