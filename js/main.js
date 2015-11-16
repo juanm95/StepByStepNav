@@ -22,7 +22,7 @@ function getDirections(position) {
     step++;
     render(steps[step]);
   } else {
-    console.log("still on the way");
+    console.log(position);
   };
 }
 function render(step) {
@@ -34,6 +34,7 @@ function directionsCallback(result, status) {
   navigator.geolocation.watchPosition(getDirections);
 }
 function withinRadius(step, position) {
+  console.log(step);
   var epsilon = .001;
   var x1 = step.end_location.lat();
   var x2 = position.coords.latitude;
