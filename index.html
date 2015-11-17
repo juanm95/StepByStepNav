@@ -17,11 +17,17 @@
     <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
     <style type="text/css">
       html, body { height: 100%; margin: 0; padding: 0; }
-      #directions { height: 50%;}
+      #map { height: 46%;}
+      #directions { height: 46%;}
     </style>
 </head>
 <body>
 <p>Step By Step Directions</p>
+<form>
+  <input type="text" id="query">
+  </input>
+</form>
+<div id="map"></div>
 <div id="directions"></div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
