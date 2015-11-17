@@ -35,7 +35,7 @@ function getDirections(position) {
   };
 }
 function render(step) {
-  $('#directions').html(step.instructions);
+  $('#directions').prepend("<div>" + step.instructions + "</div>");
   var startLat = step.start_location.lat();
   var startLng = step.start_location.lng();
   var endLat = step.end_location.lat();
